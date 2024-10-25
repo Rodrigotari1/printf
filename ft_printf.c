@@ -6,7 +6,7 @@
 /*   By: rodrigo <rodrigo@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/18 18:22:28 by rodrigo           #+#    #+#             */
-/*   Updated: 2024/10/25 13:33:02 by rodrigo          ###   ########.fr       */
+/*   Updated: 2024/10/25 14:58:17 by rodrigo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,75 +69,12 @@ int	ft_printf(const char *format, ...)
 	return (counter);
 }
 
-/*#include <stdio.h>
-#include "ft_printf.h"
+/*#include "ft_printf.h"
 
 int main() {
-    int ft_return, stdio_return;
-
-    // Test case 1: Simple string
-    printf("--- Test case 1 ---\n");
-    ft_return = ft_printf("Hello, world!\n");
-    stdio_return = printf("Hello, world!\n");
-    printf("ft_printf return value: %d\n", ft_return);
-    printf("printf return value: %d\n", stdio_return);
-
-    // Test case 2: String with format specifiers
-    printf("\n--- Test case 2 ---\n");
-    ft_return = ft_printf("This is an %s with %d format specifiers.\n", "example", 2);
-    stdio_return = printf("This is an %s with %d format specifiers.\n", "example", 2);
-    printf("ft_printf return value: %d\n", ft_return);
-    printf("printf return value: %d\n", stdio_return);
-
-    // Test case 3: Character
-    printf("\n--- Test case 3 ---\n");
-    ft_return = ft_printf("The character is: %c\n", 'A');
-    stdio_return = printf("The character is: %c\n", 'A');
-    printf("ft_printf return value: %d\n", ft_return);
-    printf("printf return value: %d\n", stdio_return);
-
-    // Test case 4: Integer
-    printf("\n--- Test case 4 ---\n");
-    ft_return = ft_printf("The integer is: %d\n", 42);
-    stdio_return = printf("The integer is: %d\n", 42);
-    printf("ft_printf return value: %d\n", ft_return);
-    printf("printf return value: %d\n", stdio_return);
-
-    // Test case 5: Unsigned integer
-    printf("\n--- Test case 5 ---\n");
-    ft_return = ft_printf("The unsigned integer is: %u\n", 42);
-    stdio_return = printf("The unsigned integer is: %u\n", 42);
-    printf("ft_printf return value: %d\n", ft_return);
-    printf("printf return value: %d\n", stdio_return);
-
-    // Test case 6: Hexadecimal (lowercase)
-    printf("\n--- Test case 6 ---\n");
-    ft_return = ft_printf("The hexadecimal (lowercase) is: %x\n", 0xDEADBEEF);
-    stdio_return = printf("The hexadecimal (lowercase) is: %x\n", 0xDEADBEEF);
-    printf("ft_printf return value: %d\n", ft_return);
-    printf("printf return value: %d\n", stdio_return);
-
-    // Test case 7: Hexadecimal (uppercase)
-    printf("\n--- Test case 7 ---\n");
-    ft_return = ft_printf("The hexadecimal (uppercase) is: %X\n", 0xDEADBEEF);
-    stdio_return = printf("The hexadecimal (uppercase) is: %X\n", 0xDEADBEEF);
-    printf("ft_printf return value: %d\n", ft_return);
-    printf("printf return value: %d\n", stdio_return);
-
-    // Test case 8: Pointer
-    printf("\n--- Test case 8 ---\n");
-    int *ptr = NULL;
-    ft_return = ft_printf("The pointer is: %p\n", ptr);
-    stdio_return = printf("The pointer is: %p\n", ptr);
-    printf("ft_printf return value: %d\n", ft_return);
-    printf("printf return value: %d\n", stdio_return);
-
-    // Test case 9: Percent sign
-    printf("\n--- Test case 9 ---\n");
-    ft_return = ft_printf("This is a percent sign: %%\n");
-    stdio_return = printf("This is a percent sign: %%\n");
-    printf("ft_printf return value: %d\n", ft_return);
-    printf("printf return value: %d\n", stdio_return);
-
+    ft_printf("Character: %c, String: %s, Integer: %d\n", 'A', "Hello", 42);
+    ft_printf("Unsigned integer: %u, Hexadecimal (lower): %x\n", 1234, 0xDEADBEEF);
+    ft_printf("Hexadecimal (upper): %X, Pointer: %p\n", 0xDEADBEEF, (void *)&main);
+    ft_printf("Percent sign: %%\n");
     return 0;
 }*/
